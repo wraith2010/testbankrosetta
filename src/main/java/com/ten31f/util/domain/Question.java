@@ -1,8 +1,6 @@
 package com.ten31f.util.domain;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Question {
@@ -21,6 +19,7 @@ public class Question {
 	public void setPrompt(String prompt) {
 
 		if (prompt.contains(")")) {
+			System.out.println("prompt: " + prompt);
 			prompt = prompt.substring(prompt.indexOf(")") + 2, prompt.length());
 		}
 
